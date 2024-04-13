@@ -11,7 +11,7 @@ use App\Project\TimeLog\Domain\Model\Props\CreateTimeLogProps;
 final readonly class AddTimeLogHandler
 {
     public function __construct(
-        private TimeLogCreator $creator
+        private TimeLogCreator $creator,
     ) {
     }
 
@@ -21,7 +21,7 @@ final readonly class AddTimeLogHandler
             CreateTimeLogProps::from(
                 $command->id,
                 $command->description,
-                $command->duration
+                $command->duration,
             ),
             TaskId::from($command->taskId),
         );

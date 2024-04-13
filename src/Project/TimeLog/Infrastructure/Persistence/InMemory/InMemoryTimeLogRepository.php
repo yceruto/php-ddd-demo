@@ -43,7 +43,7 @@ class InMemoryTimeLogRepository implements TimeLogRepository
     {
         return array_filter(
             $this->timeLogs,
-            static fn (TimeLog $timeLog) => $timeLog->taskId()->equals($taskId)
+            static fn (TimeLog $timeLog) => $timeLog->taskId()->equals($taskId),
         );
     }
 }

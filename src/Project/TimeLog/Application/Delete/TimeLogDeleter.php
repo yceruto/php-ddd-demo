@@ -15,7 +15,7 @@ final readonly class TimeLogDeleter
     public function __construct(
         private TaskFinder $taskFinder,
         private TimeLogFinder $timeLogFinder,
-        private TimeLogRepository $repository
+        private TimeLogRepository $repository,
     ) {
     }
 

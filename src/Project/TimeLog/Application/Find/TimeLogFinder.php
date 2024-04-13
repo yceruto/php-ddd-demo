@@ -14,7 +14,7 @@ use App\Project\TimeLog\Domain\Repository\TimeLogRepository;
 final readonly class TimeLogFinder
 {
     public function __construct(
-        private TimeLogRepository $repository
+        private TimeLogRepository $repository,
     ) {
     }
 

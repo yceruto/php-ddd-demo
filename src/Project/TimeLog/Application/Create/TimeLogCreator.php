@@ -15,7 +15,7 @@ final readonly class TimeLogCreator
 {
     public function __construct(
         private TaskFinder $taskFinder,
-        private TimeLogRepository $repository
+        private TimeLogRepository $repository,
     ) {
     }
 

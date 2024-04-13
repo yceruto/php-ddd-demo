@@ -128,7 +128,7 @@ final class Task
         $this->pushDomainEvent(TaskUpdated::new($this->id));
     }
 
-    protected function __construct(
+    private function __construct(
         private readonly TaskId $id,
         private TaskTitle $title,
         private TaskDescription $description,
