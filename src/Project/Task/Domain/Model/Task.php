@@ -28,6 +28,7 @@ final class Task
             TaskDuration::zero(),
             new \DateTimeImmutable(),
         );
+
         $task->pushDomainEvent(TaskCreated::new($props->id));
 
         return $task;
@@ -37,6 +38,7 @@ final class Task
     {
         $this->title = $props->title;
         $this->description = $props->description;
+
         $this->pushUpdatedEvent();
     }
 
